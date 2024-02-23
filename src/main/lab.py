@@ -8,8 +8,8 @@ def demonstrate_integer():
     An integer is a whole number without any decimal points.
     """
 
-    my_integer = None  # Assign any integer value to 'my_integer'
-    print("Integer:", my_integer)
+    my_integer = 15  # Assign any integer value to 'my_integer'
+    return my_integer
 
 
 def demonstrate_float():
@@ -20,8 +20,8 @@ def demonstrate_float():
     A float is a number that has both an integer and fractional part, separated by a decimal point.
     """
 
-    my_float = None  # Assign any floating-point value to 'my_float'
-    print("Float:", my_float)
+    my_float = 15.2  # Assign any floating-point value to 'my_float'
+    return my_float
 
 
 def demonstrate_boolean():
@@ -32,31 +32,61 @@ def demonstrate_boolean():
     A boolean represents one of two values: True or False.
     """
 
-    my_boolean = None  # Assign either True or False to 'my_boolean'
-    print("Boolean:", my_boolean)
+    my_boolean = False  # Assign either True or False to 'my_boolean'
+    return my_boolean
 
-
-def demonstrate_sequence():
+def demonstrate_string():
     """
-    This function demonstrates sequence data types in Python: string, tuple, and list.
+    This function demonstrates the string data type in Python.
     
-    Create variables named 'my_string', 'my_tuple', and 'my_list' for string, tuple, and list respectively.
-    Assign any values of these types to the variables.
+    Create a string variable named 'my_string' and assign it any string value.
+    A string is a sequence of characters enclosed within single or double quotes.
     """
 
-    # String: A sequence of characters enclosed within single or double quotes
-    my_string = None
+    # Assign a string value to the variable
+    my_string = "Hello, World!"
 
-    # Tuple: An immutable sequence of elements, separated by commas and enclosed within parentheses
-    my_tuple = None
+    # Print the string
+    return my_string
 
-    # List: A mutable sequence of elements, separated by commas and enclosed within square brackets
-    my_list = None
+def demonstrate_tuple():
+    """
+    This function demonstrates the tuple data type in Python.
+    
+    Create a tuple variable named 'my_tuple' and assign it any tuple value.
+    A tuple is an immutable sequence of elements, separated by commas and enclosed within parentheses.
+    """
 
-    print("String:", my_string)
-    print("Tuple:", my_tuple)
-    print("List:", my_list)
+    # Define tuple elements
+    element1 = 1
+    element2 = 2
+    element3 = 3
 
+    # Create the tuple
+    my_tuple = (element1, element2, element3)
+    
+    return my_tuple
+
+
+
+
+def demonstrate_create_areas_list():
+    """
+    This function creates a list containing the area of the hallway, kitchen, living room,
+    bedroom, and bathroom, in the specified order.
+
+    Create a list, areas, that contains the area of the hallway (hall), kitchen (kit), living room (liv), bedroom (bed) and bathroom (bath), 
+    in this order. Use the predefined variables.
+    """
+    hall = 10
+    kit = 20
+    liv = 30
+    bed = 40
+    bath = 15
+
+    areas = [hall, kit, liv, bed, bath]
+    
+    return areas
 
 def demonstrate_set():
     """
@@ -66,8 +96,16 @@ def demonstrate_set():
     A set is an unordered collection of unique elements enclosed within curly braces.
     """
 
-    my_set = None  # Assign any set value to 'my_set'
-    print("Set:", my_set)
+    # Define set elements
+    element1 = 'a'
+    element2 = 'b'
+    element3 = 'c'
+
+    # Create the set
+    my_set = {element1, element2, element3}
+    
+    return my_set
+
 
 
 def demonstrate_dictionary():
@@ -79,8 +117,17 @@ def demonstrate_dictionary():
     with keys and values separated by a colon.
     """
 
-    my_dict = None  # Assign any dictionary value to 'my_dict'
-    print("Dictionary:", my_dict)
+    # Define dictionary key-value pairs
+    key1 = 'key1'
+    value1 = 'value1'
+    key2 = 'key2'
+    value2 = 'value2'
+
+    # Create the dictionary
+    my_dict = {key1: value1, key2: value2}
+    
+    return my_dict
+
 
 
 def demonstrate_variable_scope():
@@ -126,9 +173,11 @@ def demonstrate_variable_scope():
 
         # Local variable declaration within function1
         local_var1 = "I am local to function1"
+        print("Inside function1 - local_var1:", local_var1)  # Corrected error
         print("Inside function1 - global_var:", global_var)
         
 
     function1()  # Call function1 to demonstrate variable scope
-    print("Inside function1 - local_var1:", local_var1)  # Corrected error
+    
     print("Outside function1 - global_var:", global_var)
+    return None

@@ -1,33 +1,24 @@
 # src/main/app.py
-from lab import (
-    demonstrate_integer,
-    demonstrate_float,
-    demonstrate_boolean,
-    demonstrate_sequence,
-    demonstrate_set,
-    demonstrate_dictionary,
-    demonstrate_variable_scope,
-)
-
+import lab
 if __name__ == "__main__":
     
-    print("--- Integer ---")
-    demonstrate_integer()
+    print("--- Integer ---",lab.demonstrate_integer())
     
-    print("--- Float ---")
-    demonstrate_float()
+    print("--- Float ---",lab.demonstrate_float())
     
-    print("--- Boolean ---")
-    demonstrate_boolean()
+    print("--- Boolean ---",lab.demonstrate_boolean())
     
-    print("--- Sequence ---")
-    demonstrate_sequence()
+    print("--- String ---",lab.demonstrate_string())
     
-    print("--- Set ---")
-    demonstrate_set()
-    
-    print("--- Dictionary ---")
-    demonstrate_dictionary()
-    
+    print("--- Tuple --- ",lab.demonstrate_tuple())
+
+    print("--- Set ---",lab.demonstrate_set())
+
+
+    print("--- Dictionary ---",lab.demonstrate_dictionary())    
+
+    print("--- Create Areas List ---")
+    print("Returned value:", lab.demonstrate_create_areas_list())
+
     print("--- Variable Scope ---")
-    demonstrate_variable_scope()
+    lab. demonstrate_variable_scope()

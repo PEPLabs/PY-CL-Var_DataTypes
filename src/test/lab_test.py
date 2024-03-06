@@ -1,7 +1,7 @@
 import unittest
 from io import StringIO
 from contextlib import redirect_stdout
-from ..main.lab import (
+from src.main.lab import (
     demonstrate_integer,
     demonstrate_float,
     demonstrate_boolean,
